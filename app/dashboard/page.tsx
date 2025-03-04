@@ -8,9 +8,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function fetchPosts() {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/transaction-history`
-      );
+      const res = await fetch("/api/transaction-history");
       const data = await res.json();
       setTransactions(data);
     }
