@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { navLinks } from "./constants";
 import LinkButton from "../LinkButton";
+import Input from "../Input";
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +21,22 @@ export default function MobileNavbar() {
     setIsMenuOpen(false);
   };
 
+  const closeMenuAndSearchBar = () => {
+    setIsMenuOpen(false);
+    setIsSearchBarOpen(false);
+  };
+
   return (
     <nav className="fixed w-full lg:hidden">
       {/* Navbar Header */}
       <div className="flex justify-between p-4">
-        <h5 className="text-primary-500">Aeon Bank Assessment</h5>
+        <Link
+          href="/"
+          className="text-primary-500 font-semibold"
+          onClick={closeMenuAndSearchBar}
+        >
+          Aeon Bank Assessment
+        </Link>
 
         {/* Search & Menu Buttons */}
         <div className="flex items-center space-x-4">
@@ -65,7 +77,9 @@ export default function MobileNavbar() {
               {link.name}
             </Link>
           ))}
-          <LinkButton href="/login" label="Login" />
+          <LinkButton href="/login" onClick={closeMenuAndSearchBar}>
+            Login
+          </LinkButton>
         </div>
       </div>
 
@@ -75,10 +89,10 @@ export default function MobileNavbar() {
           isSearchBarOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <input
+        <Input
           type="search"
           placeholder="Search..."
-          className="w-full p-2 border-b outline-none border-neutral-300 focus:border-neutral-500"
+          className="border-x-0 border-t-0 rounded-none"
         />
       </div>
     </nav>
