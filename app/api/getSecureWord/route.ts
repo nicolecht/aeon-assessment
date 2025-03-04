@@ -1,3 +1,6 @@
+// This file should follow kebab-case naming (e.g., "get-secure-word"),
+// but it is using camelCase ("getSecureWord") to comply with the assessment requirements.
+
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
