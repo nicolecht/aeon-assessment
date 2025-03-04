@@ -1,10 +1,28 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import TransactionTable from "../_components/TransactionTable";
 
-export default async function Dashboard() {
-  const data = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/transaction-history`
-  );
-  const transactions = await data.json();
+export default function Dashboard() {
+  const [transactions, setTransactions] = useState(null);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/transaction-history`
+      );
+      const data = await res.json();
+      setTransactions(data);
+    }
+    fetchPosts();
+  }, []);
+
+  if (!transactions)
+    return (
+      <div className="grid place-items-center h-dvh">
+        <p>Loading...</p>
+      </div>
+    );
 
   return (
     <main className="lg:p-20 p-4 space-y-4">
