@@ -1,15 +1,6 @@
+import { Transaction } from "@/app/_types/Transaction";
 import { formatCurrency } from "@/app/_utils/formatCurrency";
 import { formatDate } from "@/app/_utils/formatDate";
-
-interface Transaction {
-  id: number;
-  date: string;
-  referenceId: string;
-  to: { companyName: string; recipientReference: string };
-  transactionType: string;
-  amount: number;
-  currency: string;
-}
 
 export default function TransactionTable({
   transactions,
