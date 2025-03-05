@@ -67,7 +67,7 @@ npm run dev
 The app will be available at `http://localhost:3000`.
 
 ### API Endpoints
-- `GET /api/getSecureWord` → Returns a static secure word.
+- `POST /api/getSecureWord` → Returns a static secure word.
 - `POST /api/login` → Accepts an encrypted password and username, returns success.
 - `GET /api/transaction-history` → Returns mock transaction history data.
 
