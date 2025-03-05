@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Aeon Bank",
-  description: "Assessment version of Aeon Bank's website.",
+  description: "Assessment by Nicole Chee",
 };
 
 export default function RootLayout({
