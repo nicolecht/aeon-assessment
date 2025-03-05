@@ -40,7 +40,7 @@ export default function MobileNavbar() {
 
         {/* Search & Menu Buttons */}
         <div className="flex items-center space-x-4">
-          <button onClick={toggleSearchBar}>
+          <button className="cursor-pointer" onClick={toggleSearchBar}>
             <Image
               src="/icons/magnifying-glass-solid.svg"
               alt="Toggle search"
@@ -49,7 +49,7 @@ export default function MobileNavbar() {
             />
           </button>
 
-          <button onClick={toggleMenu}>
+          <button className="cursor-pointer" onClick={toggleMenu}>
             <Image
               src={
                 isMenuOpen ? "/icons/xmark-solid.svg" : "/icons/bars-solid.svg"
