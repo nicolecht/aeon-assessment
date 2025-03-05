@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./_components/Navbar";
 
 export const metadata: Metadata = {
   title: "Aeon Bank",
@@ -14,10 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased font-display">
-        <Navbar />
-        {children}
-      </body>
+      <body className="antialiased font-display">{children}</body>
     </html>
   );
 }
