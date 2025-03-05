@@ -16,12 +16,7 @@ export default function Dashboard() {
     setTransactions(data);
   }
 
-  if (!transactions)
-    return (
-      <div className="grid place-items-center h-dvh">
-        <p>Loading...</p>
-      </div>
-    );
+  if (!transactions) return <></>;
 
   return (
     <main className="p-4 space-y-4 lg:p-20">
