@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButton component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="p-3 font-semibold text-center text-white rounded-full min-w-32 bg-primary-500 hover:bg-primary-600 undefined"
+    href="/test"
+  >
+    Click Me
+  </a>
+</DocumentFragment>
+`;
