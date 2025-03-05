@@ -22,7 +22,7 @@ export default function TransactionTable({
         {transactions.map((transaction) => (
           <tr
             key={transaction.id}
-            className="[&>td]:p-4 [&>td]:border-b [&>td]:border-neutral-300 "
+            className="[&>td]:p-4 [&>td]:border-b [&>td]:border-neutral-300"
           >
             <td>{formatDate(transaction.date)}</td>
             <td>#{transaction.referenceId}</td>

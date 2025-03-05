@@ -7,13 +7,14 @@ export default function Dashboard() {
   const [transactions, setTransactions] = useState(null);
 
   useEffect(() => {
-    async function fetchPosts() {
-      const res = await fetch("/api/transaction-history");
-      const data = await res.json();
-      setTransactions(data);
-    }
-    fetchPosts();
+    fetchTransactions();
   }, []);
+
+  async function fetchTransactions() {
+    const res = await fetch("/api/transaction-history");
+    const data = await res.json();
+    setTransactions(data);
+  }
 
   if (!transactions)
     return (
