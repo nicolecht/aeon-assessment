@@ -11,7 +11,7 @@ This application is also hosted using Vercel and can be accessed at: [https://ae
 - Security: bcryptjs (v3)
 - Development & Tooling: TypeScript (v5), ESLint (v9)
 - API Development: Next.js API Routes
-- Unit Testing: Jest, React Testing Library
+- Unit Testing: Jest (v29), React Testing Library (v16)
 - CI/CD & Code Quality: GitHub Workflows for PR checks, Codeowners for strict approval process
 - Hosting: Vercel
 
@@ -76,6 +76,15 @@ To run unit tests:
 ```sh
 npm run test
 ```
+The test will be run using Jest.
+
+### Viewing V8 Code Coverage Report
+Jest is configured to use the V8 coverage provider to generate a code coverage report.
+After successfully running Unit Tests, open the code coverage report using:
+```sh
+open coverage/lcov-report/index.html
+```
+Opening this file in your browser will display a detailed, interactive coverage report.
 
 ---
 **Author:** Nicole Chee

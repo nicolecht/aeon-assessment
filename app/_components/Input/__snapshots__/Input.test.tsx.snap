@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <input
+    class="p-2 border rounded-lg w-full outline-none border-neutral-300 focus:border-neutral-500 undefined"
+    placeholder="Enter text"
+  />
+</DocumentFragment>
+`;
