@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import Button from ".";
 
@@ -7,6 +6,12 @@ describe("Button component", () => {
   it("renders correctly and matches the snapshot", () => {
     const { asFragment } = render(<Button>Click Me</Button>);
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders with provided className", () => {
+    render(<Button className="custom-class" />);
+    const buttonElement = screen.getByRole("button");
+    expect(buttonElement).toHaveClass("custom-class");
   });
 
   it("renders a button with the correct text", () => {
