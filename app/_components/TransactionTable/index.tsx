@@ -8,7 +8,7 @@ export default function TransactionTable({
   transactions: Transaction[];
 }) {
   return (
-    <table className="w-full rounded-lg overflow-x-scroll">
+    <table className="w-full overflow-x-scroll rounded-lg">
       <thead>
         <tr className="bg-neutral-100 [&>th]:p-4 [&>th]:text-start [&>th:last-child]:text-end">
           <th>Date</th>

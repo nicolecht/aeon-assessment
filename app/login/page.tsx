@@ -46,8 +46,8 @@ export default function Login() {
   };
 
   return (
-    <div className="h-dvh grid place-items-center px-4">
-      <div className="border-secondary-500 max-w-xl w-full border-1 rounded-lg p-4 space-y-4">
+    <div className="grid px-4 h-dvh place-items-center">
+      <div className="w-full max-w-xl p-4 space-y-4 border rounded-lg border-secondary-500">
         <h2>Login</h2>
 
         {step === 1 && (
@@ -76,7 +76,7 @@ export default function Login() {
         )}
 
         {step === 2 && (
-          <div className="text-center space-y-4">
+          <div className="space-y-4 text-center">
             <h5>Hello {username}!</h5>
             <p>
               Your secure word is <strong>{secureWord}</strong>
@@ -107,7 +107,7 @@ export default function Login() {
         )}
 
         {step === 4 && (
-          <p className="text-green-500 font-semibold">Login successful</p>
+          <p className="font-semibold text-green-500">Login successful</p>
         )}
       </div>
     </div>
