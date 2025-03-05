@@ -39,7 +39,7 @@ This application is also hosted using Vercel and can be accessed at: [https://ae
 - Displays the transaction history in a structured table.
 
 ### Challenge 4 (Optional): Unit Tests
-- Unit tests are included for various components and API routes.
+- Unit tests are included for all components and utility functions.
 
 ## Getting Started
 
