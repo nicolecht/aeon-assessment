@@ -41,7 +41,7 @@ export default function Login() {
 
     if (res.ok) {
       setStep(4);
-      setTimeout(() => router.push("/dashboard"), 2000); // Redirect after login
+      setTimeout(() => router.push("/dashboard"), 2000);
     }
   };
 
@@ -100,7 +100,7 @@ export default function Login() {
                 required
               />
             </div>
-            <Button className="w-full" type="submit">
+            <Button type="submit" className="w-full">
               Next
             </Button>
           </form>

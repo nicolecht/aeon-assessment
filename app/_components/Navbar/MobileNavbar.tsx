@@ -42,7 +42,7 @@ export default function MobileNavbar() {
         <div className="flex items-center space-x-4">
           <button onClick={toggleSearchBar}>
             <Image
-              src="/magnifying-glass-solid.svg"
+              src="/icons/magnifying-glass-solid.svg"
               alt="Toggle search"
               width={16}
               height={16}
@@ -51,7 +51,7 @@ export default function MobileNavbar() {
 
           <button onClick={toggleMenu}>
             <Image
-              src={isMenuOpen ? "/xmark-solid.svg" : "/bars-solid.svg"}
+              src={isMenuOpen ? "/icons/xmark-solid.svg" : "/icons/bars-solid.svg"}
               alt="Toggle navigation menu"
               width={16}
               height={16}
