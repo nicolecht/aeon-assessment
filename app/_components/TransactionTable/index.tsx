@@ -23,6 +23,7 @@ export default function TransactionTable({
           <tr
             key={transaction.id}
             className="[&>td]:p-4 [&>td]:border-b [&>td]:border-neutral-300"
+            data-testid="transaction-row"
           >
             <td>{formatDate(transaction.date)}</td>
             <td>#{transaction.referenceId}</td>
