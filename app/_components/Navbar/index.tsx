@@ -7,13 +7,11 @@ import Input from "../Input";
 export default function Navbar() {
   return (
     <>
-      {/* Desktop Navbar */}
       <nav
         data-testid="desktop-navbar"
         className="fixed hidden w-full p-4 lg:flex lg:justify-between"
       >
-        {/* Left Section: Title & Navigation Links */}
-        <div className="flex items-center space-x-4 grow font-semibold">
+        <div className="flex items-center space-x-4 font-semibold grow">
           <Link href="/" className="text-primary-500">
             Aeon Bank Assessment
           </Link>
@@ -28,7 +26,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Right Section: Search Bar & Login Button */}
         <div className="flex items-center space-x-4">
           <Input type="search" placeholder="Search..." />
           <LinkButton href="/login">Login</LinkButton>

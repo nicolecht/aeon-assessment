@@ -24,7 +24,7 @@ export default function Dashboard() {
     );
 
   return (
-    <main className="lg:p-20 p-4 space-y-4">
+    <main className="p-4 space-y-4 lg:p-20">
       <h4 className="text-primary-500">Transaction History</h4>
       <TransactionTable transactions={transactions} />
     </main>

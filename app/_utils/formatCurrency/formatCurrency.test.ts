@@ -19,8 +19,6 @@ describe("formatCurrency", () => {
 
   test("handles different currencies", () => {
     expect(formatCurrency(100, "GBP")).toBe("£100.00");
-
-    // JPY does not always have decimal places
     expect(formatCurrency(2500, "JPY")).toBe("¥2,500.00");
   });
 });

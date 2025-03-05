@@ -32,7 +32,7 @@ export default function MobileNavbar() {
       <div className="flex justify-between p-4">
         <Link
           href="/"
-          className="text-primary-500 font-semibold"
+          className="font-semibold text-primary-500"
           onClick={closeMenuAndSearchBar}
         >
           Aeon Bank Assessment
@@ -95,7 +95,7 @@ export default function MobileNavbar() {
         <Input
           type="search"
           placeholder="Search..."
-          className="border-x-0 border-t-0 rounded-none"
+          className="border-t-0 rounded-none border-x-0"
         />
       </div>
     </nav>

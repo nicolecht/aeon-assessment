@@ -45,8 +45,8 @@ This application is also hosted using Vercel and can be accessed at: [https://ae
 
 ### Prerequisites
 Ensure you have the following installed:
-- [Node.js] (LTS version recommended)
-- [NPM]
+- Node.js (LTS version recommended)
+- NPM
 
 ### Installation
 1. Clone the repository:
