@@ -18,7 +18,9 @@ exports[`MobileNavbar component renders correctly and matches snapshot 1`] = `
       <div
         class="flex items-center space-x-4"
       >
-        <button>
+        <button
+          class="cursor-pointer"
+        >
           <img
             alt="Toggle search"
             data-nimg="1"
@@ -30,7 +32,9 @@ exports[`MobileNavbar component renders correctly and matches snapshot 1`] = `
             width="16"
           />
         </button>
-        <button>
+        <button
+          class="cursor-pointer"
+        >
           <img
             alt="Toggle navigation menu"
             data-nimg="1"
