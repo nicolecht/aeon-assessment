@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileNavbar component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="fixed w-full lg:hidden"
+    data-testid="mobile-navbar"
+  >
+    <div
+      class="flex justify-between p-4"
+    >
+      <a
+        class="text-primary-500 font-semibold"
+        href="/"
+      >
+        Aeon Bank Assessment
+      </a>
+      <div
+        class="flex items-center space-x-4"
+      >
+        <button>
+          <img
+            alt="Toggle search"
+            data-nimg="1"
+            decoding="async"
+            height="16"
+            loading="lazy"
+            src="/icons/magnifying-glass-solid.svg"
+            style="color: transparent;"
+            width="16"
+          />
+        </button>
+        <button>
+          <img
+            alt="Toggle navigation menu"
+            data-nimg="1"
+            decoding="async"
+            height="16"
+            loading="lazy"
+            src="/icons/bars-solid.svg"
+            style="color: transparent;"
+            width="16"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="transition-all duration-500 bg-primary-100 px-4 overflow-hidden max-h-0 opacity-0"
+      data-testid="mobile-menu"
+    >
+      <div
+        class="flex flex-col justify-between py-4 space-y-4"
+      >
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/showcase"
+        >
+          Showcase
+        </a>
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/docs"
+        >
+          Docs
+        </a>
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/analytics"
+        >
+          Analytics
+        </a>
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/commerce"
+        >
+          Commerce
+        </a>
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/templates"
+        >
+          Templates
+        </a>
+        <a
+          class="font-semibold text-secondary-500 hover:text-primary-500"
+          href="/enterprise"
+        >
+          Enterprise
+        </a>
+        <a
+          class="p-3 font-semibold text-center text-white rounded-full min-w-32 bg-primary-500 hover:bg-primary-600 undefined"
+          href="/login"
+        >
+          Login
+        </a>
+      </div>
+    </div>
+    <div
+      class="transition-all duration-300 px-4 overflow-hidden max-h-0 opacity-0"
+    >
+      <input
+        class="p-2 border rounded-lg w-full outline-none border-neutral-300 focus:border-neutral-500 border-x-0 border-t-0 rounded-none"
+        placeholder="Search..."
+        type="search"
+      />
+    </div>
+  </nav>
+</DocumentFragment>
+`;

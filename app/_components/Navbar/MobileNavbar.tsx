@@ -27,7 +27,7 @@ export default function MobileNavbar() {
   };
 
   return (
-    <nav className="fixed w-full lg:hidden">
+    <nav data-testid="mobile-navbar" className="fixed w-full lg:hidden">
       {/* Navbar Header */}
       <div className="flex justify-between p-4">
         <Link
@@ -51,7 +51,9 @@ export default function MobileNavbar() {
 
           <button onClick={toggleMenu}>
             <Image
-              src={isMenuOpen ? "/icons/xmark-solid.svg" : "/icons/bars-solid.svg"}
+              src={
+                isMenuOpen ? "/icons/xmark-solid.svg" : "/icons/bars-solid.svg"
+              }
               alt="Toggle navigation menu"
               width={16}
               height={16}
@@ -62,6 +64,7 @@ export default function MobileNavbar() {
 
       {/* Mobile Menu */}
       <div
+        data-testid="mobile-menu"
         className={`transition-all duration-500 bg-primary-100 px-4 overflow-hidden ${
           isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
