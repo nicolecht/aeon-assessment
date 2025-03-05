@@ -8,7 +8,10 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="fixed hidden w-full p-4 lg:flex lg:justify-between">
+      <nav
+        data-testid="desktop-navbar"
+        className="fixed hidden w-full p-4 lg:flex lg:justify-between"
+      >
         {/* Left Section: Title & Navigation Links */}
         <div className="flex items-center space-x-4 grow font-semibold">
           <Link href="/" className="text-primary-500">
