@@ -3,8 +3,6 @@
 ## Overview
 This project is a Next.js App Router (version 15.2.0) web application that implements a responsive navbar, a multi-step login flow with a mock API, and a simple table displaying data fetched from another mock API. It also includes optional unit tests.
 
-This application is also hosted using Vercel and can be accessed at: [https://aeon-assessment-coral.vercel.app/](https://aeon-assessment-coral.vercel.app/)
-
 ## Tech Stack
 - Frontend Framework: Next.js (App Router) (v15), React (v19)
 - Styling: Tailwind CSS (v4)
@@ -13,7 +11,6 @@ This application is also hosted using Vercel and can be accessed at: [https://ae
 - API Development: Next.js API Routes
 - Unit Testing: Jest (v29), React Testing Library (v16)
 - CI/CD & Code Quality: GitHub Workflows for PR checks, Codeowners for strict approval process
-- Hosting: Vercel
 
 ## Features
 
